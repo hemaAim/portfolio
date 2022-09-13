@@ -1,20 +1,22 @@
 import * as S from './styles'
 
 const Main = ({
-  title = 'React Avançado',
-  description = 'TypeScript, ReactJS, NextJS e Styled Components'
+  name = 'Hello, i’m',
+  description = 'Mr. Hemã' ,
+  meta = ' DEVELOPER FRONT-END | UX/UI DESIGNER | FREELANCER'
+
 }) => (
   <S.Wrapper>
     <S.Logo
-      src="/img/logo.svg"
+      src="/img/Man2.svg"
       alt="Imagem de um átomo e React Avançado escrito ao lado."
-    />
-    <S.Title>{title}</S.Title>
+    /> 
+    <S.Texts> 
+    <S.Title>{name}</S.Title>
     <S.Description>{description}</S.Description>
-    <S.Illustration
-      src="/img/hero-illustration.svg"
-      alt="Um desenvolvedor de frente para uma tela com código."
-    />
+    <S.Meta>{meta}</S.Meta>
+    </S.Texts>
+  
   </S.Wrapper>
 )
 

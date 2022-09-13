@@ -8,26 +8,37 @@ export const Wrapper = styled.main`
   padding: 3rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 `
 
+export const Texts = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`
 export const Logo = styled.img`
-  width: 25rem;
+  width: 18.5rem; 
   margin-bottom: 2rem;
 `
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
 `
 
-export const Description = styled.h2`
+export const Meta = styled.h2`
   font-size: 2rem;
   font-weight: 400;
 `
+export const Description = styled.h2`
+  font-weight: 800;
+  font-size: 70px;
 
-export const Illustration = styled.img`
-  margin-top: 3rem;
-  width: min(30rem, 100%);
+  color: #ff3600;
 `
+
+
